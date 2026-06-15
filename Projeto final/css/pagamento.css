@@ -1,0 +1,188 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:#f4f4f4;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+
+}
+
+.box{
+
+    background:white;
+
+    width:100%;
+
+    max-width:600px;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+p{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:gray;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+label{
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+}
+
+input,
+select{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+button{
+
+    margin-top:30px;
+
+    padding:16px;
+
+    background:black;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#c9a227;
+
+    color:black;
+
+}
+
+.toast{
+
+    display:none;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:8px;
+
+    text-align:center;
+
+}
+
+.toast.sucesso{
+
+    display:block;
+
+    background:#d9ffe5;
+
+    color:green;
+
+}
+
+.toast.erro{
+
+    display:block;
+
+    background:#ffdada;
+
+    color:#a00000;
+
+}
+
+.resumoCompra{
+
+    background:#f7f7f7;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    margin-bottom:30px;
+
+}
+
+.resumoItem{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:12px;
+
+    padding-bottom:8px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.resumoCompra h2{
+
+    margin-bottom:20px;
+
+}
+
+.resumoCompra h3{
+
+    margin-top:20px;
+
+    text-align:right;
+
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback | CDKL's</title>
+
+    <link rel="stylesheet" href="css/feedback.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Feedback do Cliente</h1>
+
+        <p>Ajude a CDKL's a melhorar cada vez mais.</p>
+
+        <form id="formFeedback">
+
+            <label for="satisfacao">
+
+                Nível de satisfação
+
+            </label>
+
+            <input
+                type="range"
+                id="satisfacao"
+                min="0"
+                max="10"
+                value="5"
+            >
+
+            <label for="categoria">
+
+                Categoria favorita
+
+            </label>
+
+            <select id="categoria">
+
+                <option>Masculino</option>
+
+                <option>Feminino</option>
+
+                <option>Acessórios</option>
+
+            </select>
+
+            <label>
+
+                Compraria novamente?
+
+            </label>
+
+            <div class="radioGroup">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="compraria"
+                        value="Sim"
+                        checked
+                    >
+
+                    Sim
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="compraria"
+                        value="Não"
+                    >
+
+                    Não
+
+                </label>
+
+            </div>
+
+            <label>
+
+                O que mais chamou sua atenção?
+
+            </label>
+
+            <div class="checkGroup">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        value="Preço"
+                    >
+
+                    Preço
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        value="Qualidade"
+                    >
+
+                    Qualidade
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        value="Design"
+                    >
+
+                    Design
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        value="Atendimento"
+                    >
+
+                    Atendimento
+
+                </label>
+
+            </div>
+
+            <label for="comentario">
+
+                Comentário
+
+            </label>
+
+            <textarea
+                id="comentario"
+                rows="6"
+            ></textarea>
+
+            <button type="submit">
+
+                Enviar Feedback
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="js/feedback.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pagamento | CDKL's</title>
+
+    <link rel="stylesheet" href="css/pagamento.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="box">
+
+            <h1>Finalizar Compra</h1>
+
+            <p>Escolha a forma de pagamento.</p>
+
+            <div id="toast" class="toast"></div>
+
+            <div class="resumoCompra">
+
+                <h2>Resumo do Pedido</h2>
+
+                <div id="listaResumo"></div>
+
+                 <h3>
+                    Total:
+
+                    <span id="totalResumo">
+
+                        R$ 0,00
+
+                    </span>
+                    
+                 </h3>
+
+            </div>
+            
+            <form id="formPagamento">
+
+                <label for="nome">
+
+                    Nome do Comprador
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    required
+                >
+
+                <label for="cpf">
+
+                    CPF
+
+                </label>
+
+                <input
+                    type="text"
+                    id="cpf"
+                    required
+                >
+
+                <label for="forma">
+
+                    Forma de Pagamento
+
+                </label>
+
+                <select id="forma">
+
+                    <option value="Pix">
+
+                        Pix
+
+                    </option>
+
+                    <option value="Cartão de Crédito">
+
+                        Cartão de Crédito
+
+                    </option>
+
+                    <option value="Boleto">
+
+                        Boleto Bancário
+
+                    </option>
+
+                </select>
+
+                <div id="dadosCartao">
+
+                    <label for="numeroCartao">
+
+                        Número do Cartão
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="numeroCartao"
+                    >
+
+                    <label for="validade">
+
+                        Validade
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="validade"
+                        placeholder="MM/AA"
+                    >
+
+                    <label for="cvv">
+
+                        CVV
+
+                    </label>
+
+                    <input
+                        type="password"
+                        id="cvv"
+                        maxlength="3"
+                    >
+
+                </div>
+
+                <button type="submit">
+
+                    Confirmar Compra
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="js/pagamento.js"></script>
+
+</body>
+
+</html>
